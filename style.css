@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: rgb(46, 46, 240);
+}
+.app{
+    width: 90%;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 100px auto 0px;
+}
+.app h1{
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: #001e4d;
+    border-bottom: 1px solid black;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    color: #001e4d;
+     font-size: 28px;
+     font-weight: 600;
+}
+#answer-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    
+    
+}
+button{
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: start;
+    border: 1px solid #222;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.btn:hover:not([disabled]){
+    background-color: #222;
+    color: #fff;
+}
+#next-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#nxt{
+    background-color:#1253bb;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 10px;
+    display: none;
+}
+.btn:disabled{
+    cursor: no-drop;
+    color: black;
+}
+.correct{
+    background: #9aeabc;
+    color: black;
+}
+.incorrect{
+    background: #ff9393;
+    color: black;
+}
